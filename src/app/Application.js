@@ -14,7 +14,9 @@ export default class Application extends EventEmitter {
 		super();
 
 		this.config = config;
-		this.data = {};
+		this.data = {
+			planets: [],
+		};
 
 		this.init();
 	}
